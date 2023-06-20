@@ -4,7 +4,7 @@ import glob
 import os
 import io
 from io import BytesIO
-CONNECTION_STRING= "DefaultEndpointsProtocol=https;AccountName=storageaccountponleb;AccountKey=PvDsGnKvUdY3taoLAow0IQfPXibja0OYvmIuJI8O17XLO+/TwMabNE8IMvNLya+Rgemrk6hYsVw0+AStGE2i5A==;EndpointSuffix=core.windows.net"
+CONNECTION_STRING= os.get_env(CONNECTION_STRING)
 CONTAINERNAME="input"
 OUTPUTCONTAINERNNAME="output"
 
